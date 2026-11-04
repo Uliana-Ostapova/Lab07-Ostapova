@@ -96,54 +96,54 @@
 // }
 
 // Задание 7 (Журнал оценок)
-// int[] grades = { 4, 5, 2, 3, 4, 5, 5, 3 };
-// int sum = 0;
-// int max = grades[0];
-// int min = grades[0];
-// int two = 0;
-// int five = 0;
-// for (int i = 0; i < grades.Length; i++)
-// {
-//     sum += grades[i];
-//     if (grades[i] == 5)
-//     {
-//         five += 1;
-//     } else if (grades[i] == 2)
-//     {
-//         two += 1;
-//     }
-//     if (grades[i] > max)
-//     {
-//         max = grades[i];
-//     } else if (grades[i] < min)
-//     {
-//         min = grades[i];
-//     }
-//     Console.Write(grades[i] + " ");
-// }
-// double average = (double)sum / grades.Length;
-// Console.WriteLine();
-// Console.WriteLine($"Средняя оценка: {average}, наибольшая: {max}, наименьшая: {min}, двоек: {two}, пятёрок: {five}");
-// if (average >= 4.5)
-// {
-//     Console.WriteLine("Отличник");
-// } else if (average >= 3.5)
-// {
-//     Console.WriteLine("Хорошист");
-// } else
-// {
-//     Console.WriteLine("Есть над чем поработать");
-// }
+int[] grades = { 4, 5, 2, 3, 4, 5, 5, 3 };
+int sum = 0;
+int max = grades[0];
+int min = grades[0];
+int two = 0;
+int five = 0;
+for (int i = 0; i < grades.Length; i++)
+{
+    sum += grades[i];
+    if (grades[i] == 5)
+    {
+        five += 1;
+    } else if (grades[i] == 2)
+    {
+        two += 1;
+    }
+    if (grades[i] > max)
+    {
+        max = grades[i];
+    } else if (grades[i] < min)
+    {
+        min = grades[i];
+    }
+    Console.Write(grades[i] + " ");
+}
+double average = (double)sum / grades.Length;
+Console.WriteLine();
+Console.WriteLine($"Средняя оценка: {average}, наибольшая: {max}, наименьшая: {min}, двоек: {two}, пятёрок: {five}");
+if (average >= 4.5)
+{
+    Console.WriteLine("Отличник");
+} else if (average >= 3.5)
+{
+    Console.WriteLine("Хорошист");
+} else
+{
+    Console.WriteLine("Есть над чем поработать");
+}
 
 // Задание 8 (Дополнительное)
-int[] arr = { 1, 2, 3, 4, 5, 6 };
-for (int i = 0; i < 3; i++)
-{
-    int num = arr[i];
-    arr[i] = arr[arr.Length - 1 - i];
-    arr[arr.Length - 1 - i] = num;
-}
-foreach (int n in arr)
-{
-    Console.Write(n + " ");
-}
+// int[] arr = { 1, 2, 3, 4, 5, 6 };
+// for (int i = 0; i < 3; i++)
+// {
+//     int num = arr[i];
+//     arr[i] = arr[arr.Length - 1 - i];
+//     arr[arr.Length - 1 - i] = num;
+// }
+// foreach (int n in arr)
+// {
+//     Console.Write(n + " ");
+// }
